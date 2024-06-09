@@ -1,32 +1,73 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleship Game
 
-Welcome,
+A strategic board game played by one player. In this case, this game will be played by guessing randomly hidden ships. The program allows you to guess by row and column. The board is small and the turns are 20x to make the chances of the ships to be found easily. A quick and short game to find 3 ships will keep a player interested in playing more.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+Here is a live link to the game :-
 
-## Reminders
+## CONTENTS
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+* [User Stories](#user-stories)
+* [Features](#features)
+  * [Future Implementations](#future-implementations)
+  * [Languages Used](#languages-used)
+* [Testing](#testing)
+* [Credits](#credits)
+  * [Code Used](#code-used)
+  * [Content](#content)
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+# How to play
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+The rules of the game are fairly simple. It begins by asking the player to choose a username and their board is created. The user will select a row and column from 0 - 6. After both a valid row and column are entered by the user, a sign is displayed on the board depending on whether or not their guess was correct. If the user managed to hit a ship successfully, they are told their guess was correct by seeing "X" displayed on the board which corresponds with the row and column selected by the user. If their guess was incorrect, however "O" is displayed on the board. If the user happens to select a row or column outside of that range or enter an unrecognized key, they will be given an error message and asked to type in a valid row.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+The player has a total of 3 ships to sink on the board. Once they run out of rounds and not total of 3 ships are hit, they are presented with a game-over message and the game ends. If the user successfully manages to guess the correct position of all SHIPS, however, then they are presented with an congratulatory message and told they have sunk all ships.
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
+## User stories
+A simple and fun game to play.
+Easy to understand the structure of the webpage. 
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
----
+#### User goals
+To play a fun game.
+To  play a game that is easy to navigate and understand.
 
-Happy coding!
+## Future Implementations
+
+- To set a break for best out of five.
+- To be able to start over without pressing run program.
+- To have players board. 
+
+## Languages Used
+
+- Python
+
+### Testing
+
+- Used PEP8 to test the code.All it gave me back was white space and spaces between the funtion.
+
+## Solved bugs
+ 
+- Ships left and To hint where the ships are.
+- I wasn't able to fix the code so I had to remove the code.
+
+# Deploying to Heroku
+Go to Heroku, create account if you don't have and log in.
+Head to your dashboard and click "New", then "Create new app"
+New/CreateNewApp
+Next step is to give your app a name and to choose region. After that click on "Create app".
+Name/Region/Create
+After that head to "Settings" tab which you can find on top of your Heroku page.
+
+Then in the "Buildpacks" section you will need to add buildpacks. Pay attention to the order in which you add buildpacks you need. In my case I had to add Python first and nodejs second.
+
+First add "Python", by clicking on Python icon and then click on "Add Buildpack".
+
+Then add "nodejs", by clicking on nodejs icon and then click on "Add Buildpack".
+
+Then head to "Deployment" tab which you can also find on top of your Heroku page and under "Deployment method" click on "GitHub"(in my case that's where my repository is).
+
+After that, just under the "Deployment method" section is "Connect to GitHub" section where you need to find your repository and then click on "Connect".
+
+Just under "Connect to GitHub" section is "Automatic deploys" section where you can click on "Enable Automatic Deploys" if that's what you want and just under is "Manual Deploy" section, where you need to click on "Deploy Manually".
