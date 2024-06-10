@@ -1,7 +1,13 @@
 import random
 
+# Invalid name
+
+
 def is_valid_name(name):
     return name.isalpha()
+
+# Welcome text and Name Input
+
 
 print("~~~~ Welcome to the Battleship!! ~~~~")
 player_name = input("Enter your name: ")
@@ -12,7 +18,9 @@ print("\n")
 print(f"READY {player_name}! Your enemy's Battleboard is ready.")
 print("\n")
 
+
 # Instructions on how to play the game
+
 
 print("You have a total of 20 turns to sink 3 hidden ships.")
 print("Guess a row and a column (0 - 9).")
@@ -20,6 +28,10 @@ print("You will see X when you hit a ship,Otherwise O if you miss.")
 print("Type'exit' instead of row number if you want to quit")
 print("Choose Wisely,GOODLUCK!")
 print("\n")
+
+
+# Battle board 
+
 
 def show_board():
     print("======= BATTLESHIP Board =======")
