@@ -2,28 +2,31 @@
 
 A strategic board game played by one player. In this case, this game will be played by guessing randomly hidden ships. The program allows you to guess by row and column.The aim is to find 3 ships using your 20 chances.This game is made with simple python language.
 
-Here is a live link to the game :- https://thebattleshipgame-86288aeb3d78.herokuapp.com/
+Here is a live link to the game :- https://the-battleship-86d41ee5519e.herokuapp.com/
 
-<img src="assets/images/maindisplay.png">
+<img src="assets/images/newdis.png" alt="the game display">
+
+<hr>
 
 # Table of contents
 1. [Battleship Game](#battleship-game)
 2. [How to play](#how-to-play)
 3. [User Stories](#user-stories)
+    * [User goals](#user-goals)
 4. [Features](#features)
     * [Existing Features](#existing-features)
     * [Future Features](#future-features)
-    * [Language used](#languages-used)
-5. [Testing](#testing)
+5. [Language used](#languages-used)
+6. [Testing](#testing)
     * [Solved Bugs](#solved-bugs)
     * [Validator testing](#validator-testing)
     * [Unfixed bugs](#unfixed-bugs)
-5. [Deployment](#deployment)
-6. [Credits](#credits)
+7. [Deployment](#deployment)
+8. [Credits](#credits)
     * [Content](#content)
     * [Acknowledgements](#acknowledgements)
 
-# How to play
+## How to play
 
 The rules of the game are fairly simple. It begins by asking the player to choose a username and their board is created. The user will select a row and column from 0 - 9. After both a valid row and column are entered by the user, a sign is displayed on the board depending on whether or not their guess was correct. If the user managed to hit a ship successfully, they are told their guess was correct by seeing "X" displayed on the board which corresponds with the row and column selected by the user. If their guess was incorrect, however "O" is displayed on the board. If the user happens to select a row or column outside of that range or enter an unrecognized key, they will be given an error message and asked to type in a valid row.
 
@@ -39,24 +42,27 @@ Easy to understand the structure of the webpage.
 To play a fun game.
 To  play a game that is easy to navigate and understand.
 
-## Future Implementations
+## Features
 
+#### Existing Features
+<img src="assets/images/invalid1.png" alt="Invalid display">
+
+#### Future Features
 - To set a break for best out of five.
 - To be able to start over without pressing run program.
 - To have players board. 
 
 ## Languages Used
+- The whole game is solely made by python. 
 
-- Python
+## Testing
 
-### Testing
-
-- Used PEP8 to test the code.All it gave me back was white space and spaces between the funtion.
-
-## Solved bugs
+#### Solved bugs
  
-- Fixed invalid name that it won't accept signs or numbers.
-Added a def 
+- Fixed invalid name that it won't accept signs or numbers. Defined "is_valid_name" so that it will only accept alphabets.
+
+#### Validtor testing
+- Used PEP8 to test the code.All it gave me back was white space and spaces between the funtion.
 
 # Deploying to Heroku
 Go to Heroku, create account if you don't have and log in.

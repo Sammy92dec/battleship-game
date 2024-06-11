@@ -157,16 +157,16 @@ def play_battleship_game():
 
         # Check if the game is over by winning or losing
 
-        if len(boat) == 0:
-            print("Congratulations! You've sunk all the battleships.You WIN!")
-            print("Thank you for playing Battleship!")
-            print("Press Run Program to play again")
-            return
+    if len(boat) == 0:
+        print("Congratulations! You've sunk all the battleships.You WIN!")
+        print("Thank you for playing Battleship!")
+        print("Press Run Program to play again")
+        return
 
-        if len(boat) > 0:
-            print(" === You've lost all your turns,Gameover you LOSE! === ")
-            print(" ==== Thank you for playing Battleship! ====")
-            print(" ==== Press Run Program to play again ====")
+    if len(boat) > 0:
+        print(" === You've lost all your turns,Gameover you LOSE! === ")
+        print(" ==== Thank you for playing Battleship! ====")
+        print(" ==== Press Run Program to play again ====")
 
 
 # Start the game
