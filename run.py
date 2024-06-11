@@ -25,7 +25,8 @@ def get_shot(guesses):
         except ValueError:
             print("Incorrect entry,Please enter your number.")
 
-# Battle board 
+
+# Battle board
 
 
 def show_board(hit, miss):
@@ -39,11 +40,12 @@ def show_board(hit, miss):
                 ch = " X "
             elif place in miss:
                 ch = " O "
-            else:         
+            else:
                 ch = " * "
             row += ch
             place += 1
         print(x, "", row)
+
 
 # Check if it is a miss or hit
 
@@ -77,18 +79,23 @@ def exit_game():
     user_input = input("Do you want to exit the game? (yes / no): ")
     return user_input.lower() == "yes"
 
+
 # Invalid name
 
 
 def is_valid_name(name):
     return name.isalpha()
 
+
+# Commands to hit, miss and check ships found
+
+
 def play_battleship_game():
     hit = []
     miss = []
     ships_found = 0
 
-# Welcome text and Name Input
+    # Welcome text and Name Input
 
 
     print("~~~~ Welcome to the Battleship!! ~~~~")
@@ -101,13 +108,12 @@ def play_battleship_game():
     print("\n")
 
 
-# Generate 3 random hidden boat positions
+    # Generate 3 random hidden boat positions
 
     boat = generate_random_boats()
-    hidden_boats = ['?' for _ in range(100)]
+    hidden_boats = ["?" for _ in range(100)]
 
-
-# Instructions on how to play the game
+    # Instructions on how to play the game
 
     print("You have a total of 20 turns to sink 3 hidden ships.")
     print("Guess a row and a column (0 - 9).")
@@ -157,10 +163,10 @@ def play_battleship_game():
             print("Press Run Program to play again")
             return
 
-    if len(boat) > 0:
-        print(" === You've lost all your turns,Gameover you LOSE! === ")
-        print(" ==== Thank you for playing Battleship! ====")
-        print(" ==== Press Run Program to play again ====")
+        if len(boat) > 0:
+            print(" === You've lost all your turns,Gameover you LOSE! === ")
+            print(" ==== Thank you for playing Battleship! ====")
+            print(" ==== Press Run Program to play again ====")
 
 
 # Start the game

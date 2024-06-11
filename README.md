@@ -1,27 +1,33 @@
 # Battleship Game
 
-A strategic board game played by one player. In this case, this game will be played by guessing randomly hidden ships. The program allows you to guess by row and column. The board is small and the turns are 20x to make the chances of the ships to be found easily. A quick and short game to find 3 ships will keep a player interested in playing more.
+A strategic board game played by one player. In this case, this game will be played by guessing randomly hidden ships. The program allows you to guess by row and column.The aim is to find 3 ships using your 20 chances.This game is made with simple python language.
 
-Here is a live link to the game :-
+Here is a live link to the game :- https://thebattleshipgame-86288aeb3d78.herokuapp.com/
 
-## CONTENTS
+<img src="assets/images/maindisplay.png">
 
-* [User Stories](#user-stories)
-* [Features](#features)
-  * [Future Implementations](#future-implementations)
-  * [Languages Used](#languages-used)
-* [Testing](#testing)
-* [Credits](#credits)
-  * [Code Used](#code-used)
-  * [Content](#content)
-
-
+# Table of contents
+1. [Battleship Game](#battleship-game)
+2. [How to play](#how-to-play)
+3. [User Stories](#user-stories)
+4. [Features](#features)
+    * [Existing Features](#existing-features)
+    * [Future Features](#future-features)
+    * [Language used](#languages-used)
+5. [Testing](#testing)
+    * [Solved Bugs](#solved-bugs)
+    * [Validator testing](#validator-testing)
+    * [Unfixed bugs](#unfixed-bugs)
+5. [Deployment](#deployment)
+6. [Credits](#credits)
+    * [Content](#content)
+    * [Acknowledgements](#acknowledgements)
 
 # How to play
 
-The rules of the game are fairly simple. It begins by asking the player to choose a username and their board is created. The user will select a row and column from 0 - 6. After both a valid row and column are entered by the user, a sign is displayed on the board depending on whether or not their guess was correct. If the user managed to hit a ship successfully, they are told their guess was correct by seeing "X" displayed on the board which corresponds with the row and column selected by the user. If their guess was incorrect, however "O" is displayed on the board. If the user happens to select a row or column outside of that range or enter an unrecognized key, they will be given an error message and asked to type in a valid row.
+The rules of the game are fairly simple. It begins by asking the player to choose a username and their board is created. The user will select a row and column from 0 - 9. After both a valid row and column are entered by the user, a sign is displayed on the board depending on whether or not their guess was correct. If the user managed to hit a ship successfully, they are told their guess was correct by seeing "X" displayed on the board which corresponds with the row and column selected by the user. If their guess was incorrect, however "O" is displayed on the board. If the user happens to select a row or column outside of that range or enter an unrecognized key, they will be given an error message and asked to type in a valid row.
 
-The player has a total of 3 ships to sink on the board. Once they run out of rounds and not total of 3 ships are hit, they are presented with a game-over message and the game ends. If the user successfully manages to guess the correct position of all SHIPS, however, then they are presented with an congratulatory message and told they have sunk all ships.
+The player has a total of 3 ships to sink on the board. Once they run out of rounds and not total of 3 ships are hit, they are presented with a game-over message and the game ends. If the user successfully manages to guess the correct position of all ships, however, then they are presented with an congratulatory message and told they have sunk all ships.
 
 
 ## User stories
@@ -49,8 +55,8 @@ To  play a game that is easy to navigate and understand.
 
 ## Solved bugs
  
-- Ships left and To hint where the ships are.
-- I wasn't able to fix the code so I had to remove the code.
+- Fixed invalid name that it won't accept signs or numbers.
+Added a def 
 
 # Deploying to Heroku
 Go to Heroku, create account if you don't have and log in.
