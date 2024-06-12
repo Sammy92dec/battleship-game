@@ -16,7 +16,7 @@ def get_shot(guesses):
 
             shot = 10 * row + col
 
-            if shot < 0 or shot > 100:
+            if shot < 0 or shot > 81:
                 print("Incorrect coordinates, Please try again")
             elif shot in guesses:
                 print("Incorrect, it's been used already")
@@ -67,7 +67,7 @@ def generate_random_boats():
     while len(boats) < 3:
         row = random.randint(0, 9)
         col = random.randint(0, 9)
-        position = 100 * row + col
+        position = 10 * row + col
         boats.add(position)
     return list(boats)
 
@@ -111,7 +111,7 @@ def play_battleship_game():
     # Generate 3 random hidden boat positions
 
     boat = generate_random_boats()
-    hidden_boats = ["?" for _ in range(100)]
+    hidden_boats = ["?" for _ in range(81)]
 
     # Instructions on how to play the game
 
