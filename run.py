@@ -16,7 +16,7 @@ def get_shot(guesses):
 
             shot = 10 * row + col
 
-            if shot < 0 or shot > 81:
+            if shot < 0 or shot > 99:
                 print("Incorrect coordinates, Please try again")
             elif shot in guesses:
                 print("Incorrect, it's been used already")
@@ -136,11 +136,12 @@ def play_battleship_game():
 
         if shot == "exit":
             if exit_game():
+                print("Thank you for playing Battlesip!")
                 return
 
         try:
             shot = int(shot)
-            if shot < 0 or shot > 100:
+            if shot < 0 or shot > 99:
                 print("Incorrect number, please try again.")
             elif shot in guesses:
                 print("Incorrect number, it's been used before.")
