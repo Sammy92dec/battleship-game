@@ -136,7 +136,7 @@ def play_battleship_game():
 
         if shot == "exit":
             if exit_game():
-                print("Thank you for playing Battlesip!")
+                print("Thankyou for playing! Press Run program to play")
                 return
 
         try:
