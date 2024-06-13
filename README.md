@@ -147,7 +147,7 @@ An end text will appear when the game is done.It depends on if you are winning o
 Written by Samrawit Tekheste.
 
 #### Code Used
-Inspiration for the program came from youtube tutorials that I have watched and other students projects from code insistute.This is a resubmission the old project used to accept signs or numbers.
+Inspiration for the program came from youtube tutorials that I have watched and other students projects from code insistute.This is a resubmission. The old project used to accept signs or numbers.
 So this is fixed version of my old game with a bigger board.
 
 - Previous game link:- https://thebattleship-7ec99083b645.herokuapp.com/
